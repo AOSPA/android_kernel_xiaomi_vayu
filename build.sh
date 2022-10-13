@@ -33,11 +33,7 @@ LGR='\033[1;32m'
 
 make_defconfig()
 {
-    # Needed to make sure we get dtb built and added to kernel image properly
     START=$(date +"%s")
-    echo -e ${LGR} "############### Cleaning ################${NC}"
-    rm $ZIMAGE
-
     echo -e ${LGR} "########### Generating Defconfig ############${NC}"
     make -s ARCH=${ARCH} O=${objdir} ${CONFIG_FILE} -j$(nproc --all)
 }
@@ -77,6 +73,7 @@ completion()
         END=$(date +"%s")
         DIFF=$(($END - $START))
         curl --upload-file $HOME/$zip_name https://free.keep.sh; echo
+        rm $HOME/$zip_name
         echo -e ${LGR} "############################################"
         echo -e ${LGR} "############# OkThisIsEpic!  ##############"
         echo -e ${LGR} "############################################${NC}"
