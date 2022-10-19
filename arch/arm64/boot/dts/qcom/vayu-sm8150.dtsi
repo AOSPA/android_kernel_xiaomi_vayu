@@ -1752,7 +1752,7 @@ And public attribution of xiaomi platforms(like J20S and so and)
 	wp_therm {
 		polling-delay-passive = <0>;
 		polling-delay = <0>;
-		thermal-governor = "user_space";
+		thermal-governor = "step_wise";
 		thermal-sensors = <&pm8150b_adc_tm ADC_AMUX_THM1_PU2>;
 		trips {
 			active-config0 {
@@ -1766,7 +1766,7 @@ And public attribution of xiaomi platforms(like J20S and so and)
 	xo_therm {
 		polling-delay-passive = <0>;
 		polling-delay = <0>;
-		thermal-governor = "user_space";
+		thermal-governor = "step_wise";
 		thermal-sensors = <&pm8150_adc_tm ADC_XO_THERM_PU2>;
 		trips {
 			active-config0 {
@@ -1780,7 +1780,7 @@ And public attribution of xiaomi platforms(like J20S and so and)
         quiet_therm {
                 polling-delay-passive = <0>;
                 polling-delay = <0>;
-                thermal-governor = "user_space";
+                thermal-governor = "step_wise";
                 thermal-sensors = <&pm8150_adc_tm ADC_AMUX_THM1_PU2>;
                 trips {
                        active-config0 {
@@ -1794,7 +1794,7 @@ And public attribution of xiaomi platforms(like J20S and so and)
         pa_therm0 {
                 polling-delay-passive = <0>;
                 polling-delay = <0>;
-                thermal-governor = "user_space";
+                thermal-governor = "step_wise";
                 thermal-sensors = <&pm8150_adc_tm ADC_AMUX_THM2_PU2>;
                 trips {
                        active-config0 {
@@ -1808,7 +1808,7 @@ And public attribution of xiaomi platforms(like J20S and so and)
 	cam_therm0 {
 		polling-delay-passive = <0>;
 		polling-delay = <0>;
-		thermal-governor = "user_space";
+		thermal-governor = "step_wise";
 		thermal-sensors = <&pm8150l_adc_tm ADC_AMUX_THM1_PU2>;
 		trips {
 			active-config0 {
@@ -1822,7 +1822,7 @@ And public attribution of xiaomi platforms(like J20S and so and)
 	cam_therm1 {
 		polling-delay-passive = <0>;
 		polling-delay = <0>;
-		thermal-governor = "user_space";
+		thermal-governor = "step_wise";
 		thermal-sensors = <&pm8150l_adc_tm ADC_AMUX_THM2_PU2>;
 		trips {
 			active-config0 {
@@ -1836,7 +1836,7 @@ And public attribution of xiaomi platforms(like J20S and so and)
 	pa_therm1 {
 		polling-delay-passive = <0>;
 		polling-delay = <0>;
-		thermal-governor = "user_space";
+		thermal-governor = "step_wise";
 		thermal-sensors = <&pm8150l_adc_tm ADC_AMUX_THM3_PU2>;
 		trips {
 			active-config0 {
